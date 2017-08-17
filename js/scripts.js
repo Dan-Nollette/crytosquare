@@ -16,9 +16,17 @@ function cryto(text){
   for (var i = 0; i * i < onlyLetters.length; i++) {
     square++;
   }
-  alert(square);
-
-
+  var columns = square;
+  if (onlyLetters.length <= square * (square - 1)){
+    columns--;
+  }
+  var shuffledLetters =[];
+  for(var i = 0; i < columns; i++){
+    for(var j = 0; i + (columns * j) < onlyLetters.length; j++){
+      shuffledLetters.push(onlyLetters[i + (columns * j)])
+    }
+  }
+  alert("square: " + square +" columns: " + columns + " onlyLetters.length: " + onlyLetters.length + " shuffledLetters: " + shuffledLetters + " shuffledLetters.length: " + shuffledLetters.length );
 
 
 
