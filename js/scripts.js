@@ -12,6 +12,21 @@ function cryto(text){
     });
   });
   alert(onlyLetters);
+  var square = 0;
+  for (var i = 0; i * i < onlyLetters.length; i++) {
+    square++;
+  }
+  alert(square);
+
+
+
+
+
+
+
+
+
+
   var letterCounter = 0;
   var lettersWithSpaces = onlyLetters.map(function(letter){
     letterCounter++;
