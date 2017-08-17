@@ -27,16 +27,8 @@ function cryto(text){
     }
   }
   alert("square: " + square +" columns: " + columns + " onlyLetters.length: " + onlyLetters.length + " shuffledLetters: " + shuffledLetters + " shuffledLetters.length: " + shuffledLetters.length );
-
-
-
-
-
-
-
-
   var letterCounter = 0;
-  var lettersWithSpaces = onlyLetters.map(function(letter){
+  var lettersWithSpaces = shuffledLetters.map(function(letter){
     letterCounter++;
     if (letterCounter % 5 === 0) {
       return letter + " ";
@@ -45,18 +37,8 @@ function cryto(text){
     }
   });
   alert (lettersWithSpaces);
+  return (lettersWithSpaces.join(""));
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
